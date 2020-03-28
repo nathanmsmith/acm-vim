@@ -6,13 +6,21 @@ Based on material from [The Missing Semester of Your CS Education](https://missi
 
 ## Installing vim
 
-We're going to be using a version of vim called neovim. Instructions to install it are [available here](https://github.com/neovim/neovim/wiki/Installing-Neovim). In general, we recommend using Chocolatey if you're on Windows, Homebrew if you're on macOS, and your default package manager if you're on Linux.
+We're going to be using a version of vim called [Neovim](https://neovim.io/). Instructions to install it are [available here](https://github.com/neovim/neovim/wiki/Installing-Neovim). In general, we recommend using Chocolatey if you're on Windows, Homebrew if you're on macOS, and your default package manager if you're on Linux.
 
 ## A Brief History of Vim
+
+Vim has a long and storied history. It stands for "Vi IMproved", where vi was another text editor. `vi` was in turn based on a text editor called `ex`, which was based on a program called `ed`, which was based on an editor called QED written by Ken Thompson at Bell Labs in 1966.
 
 Two Bit History covers the [history of Vim](https://twobithistory.org/2018/08/05/where-vim-came-from.html) more in depth.
 
 ## Ideas of vim
+
+### Telling your editor what to do
+
+Vim can be used entirely through a keyboard – a fairly radical approach from most GUI applications we're familiar with. This leads to a large learning curve at first, but promises increased efficiency, especially for common tasks.
+
+### Modes of Editing
 
 Vim is a modal text editor: as the name implies, Vim is in different modes when inserting/editing/selecting text.
 
@@ -26,16 +34,27 @@ Keys have different meanings in different modes. For example, the `x` in insert 
 
 Vim shows the mode it is in in the bottom left corner of the screen. By default, it is in normal mode.
 
+### Hackability
 
-## vimtutor
+Vim is one of the most customizable text editors available. There's an entire [scripting language](https://en.wikipedia.org/wiki/Vim_(text_editor)#Vim_script) used to configure settings! There's also a very large plugin community that extends Vim capabilities in various ways.
 
-The de facto introduction to vim is via an interactive tutorial called vimtutor. You can access it by opening Neovim:
+## Basic Text Manipulation
 
-```
-nvim
-```
+### Inserting Text
 
-then typing: `:Tutor`.
+### Command Line
+
+### Moving Around
+
+### Selecting Text
+
+### Editing Text
+
+### Counts
+
+### Text Objects
+
+### Find and Replace
 
 ## A note on CTRL and ESC
 
@@ -46,6 +65,23 @@ Note that the Ctrl key is where the caps lock key usually is and the Escape key 
 
 https://stevelosh.com/blog/2012/10/a-modern-space-cadet/#s13-control-escape
 
+## vimtutor
+
+The de facto introduction to vim is via an interactive tutorial called vimtutor. You can access it by opening Neovim:
+
+```
+nvim
+```
+
+then typing: `:Tutor`. Let's try it out!
+
+## Advanced Features
+
+### Window and Tab Management
+
+### Macros
+
+### Marks
 
 ## Where to go after vimtutor
 
@@ -53,6 +89,7 @@ https://stevelosh.com/blog/2012/10/a-modern-space-cadet/#s13-control-escape
 - :h
 - http://vimcasts.org/
 - https://sanctum.geek.nz/arabesque/vim-koans/
+- https://learnvimscriptthehardway.stevelosh.com/
 
 ### Plugins
 
