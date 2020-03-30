@@ -12,7 +12,7 @@ We're going to be using a version of vim called [Neovim](https://neovim.io/). In
 
 Vim has a long and storied history. It stands for "Vi IMproved", where vi was another text editor. `vi` was in turn based on a text editor called `ex`, which was based on a program called `ed`, which was based on an editor called QED written by Ken Thompson at Bell Labs in 1966.
 
-Two Bit History covers the [history of Vim](https://twobithistory.org/2018/08/05/where-vim-came-from.html) more in depth.
+Two Bit History covers the [history of Vim](https://twobithistory.org/2018/08/05/where-vim-came-from.html) more in depth if you're interested!
 
 ## Ideas of vim
 
@@ -42,9 +42,26 @@ Vim is one of the most customizable text editors available. There's an entire [s
 
 ### Inserting Text
 
+Press `i` to enter insert mode. Now try typing some text! Press `<ESC>` to leave insert mode and go back into normal mode.
+
 ### Command Line
 
+Command mode can be entered by typing `:` in normal mode. Your cursor will jump to the command line at the bottom of the screen upon pressing :. This mode has many functionalities, including opening, saving, and closing files, and quitting Vim.
+
+Some common commands are:
+
+- `:q` quit (close window)
+- `:w` save (“write”)
+- `:wq` save and quit
+- `:e {name of file}` open file for editing
+- `:help {topic}` open help
+  - e.g., `:help :w` opens help for the :w command
+  - e.g., `:help w` opens help for the w movement
+
 ### Moving Around
+
+You should spend most of your time in normal mode, using movement commands to navigate the buffer. Movements in Vim are also called “nouns”, because they refer to chunks of text.
+
 
 ### Selecting Text
 
